@@ -12,8 +12,8 @@ function App() {
     <>
       {/* <AuthContextProvider> */}
       <Navbar />
-      <Routes basename="/netflix">
-        <Route exact path="/" element={<Home />} />
+      <Routes>
+        <Route exact path={process.env.PUBLIC_URL + "/"} element={<Home />} />
         {/* <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route
