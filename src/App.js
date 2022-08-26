@@ -12,8 +12,8 @@ function App() {
     <>
       {/* <AuthContextProvider> */}
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
+      <Routes basename="/netflix">
+        <Route exact path="/" element={<Home />} />
         {/* <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route
